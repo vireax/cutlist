@@ -80,7 +80,7 @@ var CutList = (function() {
 				var display_size = 85 * (s.stock_array[i].size/max_stock_size);
 				//var el = $(sprintf("<div class='bin-outer'><div class='bin-label'>%s - (%s)</div><div class='bin-inner' style='height: %s%%'></div></div>", i+1, s.stock_array[i].size, Math.round(display_size)));
 				//var el = $(sprintf("<div class='bin-outer'><div class='bin-label'>%s - (%s)</div><div class='bin-inner' style='width: %s%%'></div></div>", i+1, s.stock_array[i].size, display_size));
-				var el = $(sprintf("<div class='bin-outer'><div class='bin-label'>%s - (%s)</div><div class='bin-inner' style='width: %s%%'></div></div>", i+1, s.stock_array[i].size, display_size+5));
+				var el = $(sprintf("<div class='bin-outer'><div class='bin-label'>%s - (%s)</div><div class='bin-inner' style='width: %s%%'></div></div>", i+1, s.stock_array[i].size, display_size-5));
 				$('#floor').append(el);
 				
 				var inner_el = el.find(".bin-inner");
