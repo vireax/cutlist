@@ -97,7 +97,7 @@ var CutList = (function() {
 					//var cut_el = $(sprintf("<div class='parcel' style='width : %s%%;'>%s</div>", Math.floor(cuts[j]*100/s.stock_array[i].size),  cuts[j]));
 					
 					//var cut_el = $(sprintf("<div class='parcel' style='width: %spx;'>%s</div>", cut_size-15, cuts[j]));
-					var cut_el = $(sprintf("<div class='parcel' style='width: %spx;'>%s</div>", cut_size-20, cuts[j]));
+					var cut_el = $(sprintf("<div class='parcel' style='width: %spx;'>%s</div>", cut_size-15, cuts[j]));
 					inner_el.append(cut_el);
 					cuts_sum+= cuts[j];
 					cuts_count++;
